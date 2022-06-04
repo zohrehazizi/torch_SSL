@@ -2,6 +2,7 @@
 ## _An efficient implemenation of SSL using PyTorch library_
 
 This repo containes a very fast and effiecient implemenation of SSL using torch library. 
+
 Please cite the following reference if you use `torch_SSL`:
 ```sh
 https://arxiv.org/abs/2206.00162
