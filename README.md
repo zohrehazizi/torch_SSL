@@ -1,5 +1,5 @@
 # Succesive Subspace Learning (SSL)
-## _An efficient implemenation of SSL using PyTorch library_
+## _An efficient implemenation of SSL in PyTorch library_
 
 This repo containes a very fast and effiecient implemenation of SSL using torch library. 
 
