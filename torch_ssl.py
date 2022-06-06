@@ -1,6 +1,6 @@
 ### Written by: Zohreh Azizi ###
 """
-Please cite the following reference if you use  this code:
+Please cite the following reference if you use this code:
 @article{azizi2022pager,
   title={PAGER: Progressive Attribute-Guided Extendable Robust Image Generation},
   author={Azizi, Zohreh and Kuo, C-C Jay},
