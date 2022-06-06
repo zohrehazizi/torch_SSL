@@ -5,7 +5,12 @@ This repo containes a very fast and effiecient implemenation of SSL using torch 
 
 Please cite the following reference if you use `torch_SSL`:
 ```sh
-https://arxiv.org/abs/2206.00162
+@article{azizi2022pager,
+  title={PAGER: Progressive Attribute-Guided Extendable Robust Image Generation},
+  author={Azizi, Zohreh and Kuo, C-C Jay},
+  journal={arXiv preprint arXiv:2206.00162},
+  year={2022}
+}
 ```
 
 ## Usage
