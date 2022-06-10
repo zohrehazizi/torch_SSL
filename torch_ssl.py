@@ -13,6 +13,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
+from time import time
 from torch_configs import device, convert_to_torch, convert_to_numpy
 #device = 'cpu'
 
@@ -21,6 +22,22 @@ def remove_mean(features, dim):
     feature_remove_mean = features - feature_mean
     return feature_remove_mean, feature_mean
 
+class timerClass():
+    def __init__(self):
+        self.events = ['start']
+        self.times = [time()]
+    def register(self, eventname):
+        self.events.append(eventname)
+        self.times.append(time())
+    def print(self):
+        if report_timing:
+            totalTime = self.times[-1]-self.times[0]
+            for i in range(1, len(self.events)):
+                event = self.events[i]
+                time = self.times[i]
+                time_prev = self.times[i-1]
+                print(f"{event}: {time-time_prev}, percentage: {(time-time_prev)/(totalTime)*100}")
+		
 class PCA(nn.Module):
 	def __init__(self, n_components, svd_solver = 'full'):
 		super().__init__()
@@ -298,8 +315,8 @@ class sslModel(nn.Module):
 
 
 if __name__=="__main__":
-	from generation_modules import timerClass
-
+	report_timing = True
+	
 	x = np.random.rand(1000,1,32,32)
 	timer = timerClass()
 	layer1 = torchSaab(kernel_size=(4,4), stride=(4,4), channelwise=False)
