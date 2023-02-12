@@ -7,9 +7,12 @@ Please cite the following reference if you use `torch_SSL`:
 ```sh
 @article{azizi2022pager,
   title={PAGER: Progressive Attribute-Guided Extendable Robust Image Generation},
-  author={Azizi, Zohreh and Kuo, C-C Jay},
-  journal={arXiv preprint arXiv:2206.00162},
-  year={2022}
+  author={Azizi, Zohreh and Kuo, C-C Jay and others},
+  journal={APSIPA Transactions on Signal and Information Processing},
+  volume={11},
+  number={1},
+  year={2022},
+  publisher={Now Publishers, Inc.}
 }
 ```
 
